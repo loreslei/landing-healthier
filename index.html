@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Healthier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/icon/FH.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Inter&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #14b8a6;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #0f766e;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md fixed w-screen z-10">
+        <div class="container mx-auto px-6 py-1 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900 text-teal-500 hover:text-teal-700 transition duration-300">
+                <div class="flex items-center space-x-2">
+                    <img class="h-16 w-16" src="assets/icon/FH.png" alt="">
+                    <a href="#">FoodHealthier</a>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#start" class="text-gray-600 hover:text-teal-500 transition duration-300">Início</a>
+                <a href="#functions"
+                    class="text-gray-600 hover:text-teal-500 transition duration-300">Funcionalidades</a>
+                <a href="#contact" class="text-gray-600 hover:text-teal-500 transition duration-300">Contato</a>
+            </nav>
+
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-align-justify-icon lucide-align-justify h-6 w-6">
+                        <path d="M3 12h18" />
+                        <path d="M3 18h18" />
+                        <path d="M3 6h18" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#start" class="close-menu block px-6 py-3 text-sm text-gray-600 hover:bg-gray-100">Início</a>
+            <a href="#functions"
+                class="close-menu block px-6 py-3 text-sm text-gray-600 hover:bg-gray-100">Funcionalidades</a>
+            <a href="#contact" class="close-menu block px-6 py-3 text-sm text-gray-600 hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="start" class="bg-gradient-to-b lg:bg-gradient-to-r from-teal-600 to-teal-200 text-white">
+            <div class="container mx-auto py-20 text-center">
+                <h1 class="mt-20 text-4xl md:text-6xl font-extrabold text-center leading-tight mb-4 capitalize">Melhore
+                    seu relacionamento com a comida</h1>
+                <div class="flex justify-center p-6">
+                    <div class="hidden lg:flex justify-center space-x-12">
+                        <img class="w-1/4  xl:w-1/3 opacity-70" src="assets/images/favoritas-invertido.png" alt="">
+                        <img class="w-1/6 xl:w-1/5" src="assets/images/home.png" alt="">
+                        <img class="w-1/4  xl:w-1/3 opacity-70" src="assets/images/receita.png" alt="">
+                    </div>
+
+
+                    <div class="flex-col lg:hidden">
+
+                        <div class="flex items-center justify-center space-x-20">
+                            <!-- seta esquerda -->
+                            <button class="button-prev bg-white/70 p-3 text-teal-600 hover:bg-white hover:text-teal-700 transition duration-300 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m15 18-6-6 6-6" />
+                                </svg>
+                            </button>
+
+                            <!-- Swiper -->
+                            <div class="swiper mySwiper w-56">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide flex justify-center">
+                                        <img src="assets/images/home.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide flex justify-center">
+                                        <img src="assets/images/favoritas-vertical.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide flex justify-center">
+                                        <img src="assets/images/receita-vertical.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- seta direita -->
+                            <button class="button-next bg-white/70 p-3 text-teal-600 hover:bg-white hover:text-teal-700 transition duration-300 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+                <p class="mt-20 text-white font-medium text-lg md:text-xl mb-8 max-w-2xl mx-auto">Descubra agora mesmo receitas
+                    saudáveis
+                    pouco
+                    calóricas e deliciosas!</p>
+                <a href="#"
+                    class="bg-white text-teal-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">Comece
+                    Agora</a>
+            </div>
+        </section>
+
+        <section id="functions" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Funcionalidades Incríveis</h2>
+                    <p class="text-gray-600 mt-2">Tudo o que você precisa para decolar.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Rápido e Eficiente</h3>
+                        <p class="text-gray-600">Otimizado para performance, garantindo uma experiência de usuário
+                            fluida e sem atrasos.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Design Responsivo</h3>
+                        <p class="text-gray-600">Adapta-se perfeitamente a qualquer dispositivo, seja celular, tablet ou
+                            desktop.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-blue-500 mb-4">
+                            <svg class="h-10 w-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Segurança Garantida</h3>
+                        <p class="text-gray-600">Seus dados estão protegidos com as melhores práticas de segurança do
+                            mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-100 py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Entre em Contato</h2>
+                    <p class="text-gray-600 mt-2">Tem alguma dúvida? Mande uma mensagem para nós!</p>
+                </div>
+
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <form action="#" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Nome</label>
+                            <div class="relative w-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+                                    <circle cx="12" cy="8" r="5" />
+                                    <path d="M20 21a8 8 0 0 0-16 0" />
+                                </svg>
+                                <input type="text" id="name" name="name"
+                                    class="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Seu nome">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">E-mail</label>
+                            <div class="relative w-full">
+                                <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+                                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                </svg>
+
+                                <input type="email" id="email" name="email"
+                                    class="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="seu.email@exemplo.com">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-bold mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Escreva sua mensagem aqui..."></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit"
+                                class="w-full bg-teal-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition duration-300">
+                                Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-teal-700 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Lorenna Aguiar Nunes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeButtons = document.querySelectorAll('.close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 20,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+
+
+    </script>
+
+</body>
+
+</html>
