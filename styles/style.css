@@ -1,0 +1,13 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.swiper-pagination-bullet {
+  background-color: #14b8a6;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0f766e;
+  opacity: 1;
+}
