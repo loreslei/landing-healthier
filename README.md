@@ -41,7 +41,7 @@ $ cd landing-healthier
 ---
 
 ## 🛠️ Tecnologias e Ferramentas
-Este projeto foi construído utilizando as seguintes tecnologias e recursos:
+Este projeto foi construído utilizando as seguintes tecnologias:
 
 - HTML5
 - CSS3
@@ -52,7 +52,7 @@ Este projeto foi construído utilizando as seguintes tecnologias e recursos:
   
 ## 💻 Recursos de Design e Mídia
  - 🎨 **Figma:** Todas as páginas do aplicativo foram feitos por mim.
-[Acesse o projeto no Figma]([https://www.figma.com/design/dsBXyewlxFOtdkBrBiDqfr/Aplicativo-Receitas-Saud%C3%A1veis?node-id=0-1&t=43XTWvuhLCPbru6r-1])
+[Acesse o projeto no Figma](https://www.figma.com/design/dsBXyewlxFOtdkBrBiDqfr/Aplicativo-Receitas-Saud%C3%A1veis?node-id=0-1&t=43XTWvuhLCPbru6r-1)
  - 🖼️ **Canva:** Utilizado para a criação do logo.
  - 📷 **Unsplash:** Fonte para as imagens de alta qualidade.
  - ✒️ **Google Fonts:** Tipografia Inter.
