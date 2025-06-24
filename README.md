@@ -16,6 +16,7 @@ Se preferir executar o projeto na sua própria máquina, siga os passos abaixo.
 ### Pré-requisitos
 - Um navegador de internet (Chrome, Firefox, Edge, etc.).
 - Um descompactador de arquivos (WinRAR, 7-Zip, etc.), caso opte pelo download do ZIP.
+- Git (opcional para desenvolvedores)
 
 ### Passos
 
@@ -23,10 +24,10 @@ Se preferir executar o projeto na sua própria máquina, siga os passos abaixo.
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/loreslei/landing-healthier.git
+git clone https://github.com/loreslei/landing-healthier.git
 
 # Acesse a pasta do projeto
-$ cd landing-healthier
+cd landing-healthier
 
 # Abra o arquivo index.html no seu navegador
 
@@ -51,7 +52,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 ---
   
 ## 💻 Recursos de Design e Mídia
- - 🎨 **Figma:** Todas as páginas do aplicativo foram feitos por mim.
+ - 🎨 **Figma:** Todas as páginas do aplicativo exibido na landing page foram feitos por mim.
 [Acesse o projeto no Figma](https://www.figma.com/design/dsBXyewlxFOtdkBrBiDqfr/Aplicativo-Receitas-Saud%C3%A1veis?node-id=0-1&t=43XTWvuhLCPbru6r-1)
  - 🖼️ **Canva:** Utilizado para a criação do logo.
  - 📷 **Unsplash:** Fonte para as imagens de alta qualidade.
